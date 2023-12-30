@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Reverse from "./components/easy/Reverse";
+import Array from "./components/easy/CheckArray";
+import EmptyArray from "./components/easy/EmptyArray";
+import Duplicate from "./components/easy/Duplicate";
+import ReverseNum from "./components/easy/ReverseNum";
+import Specified from "./components/easy/Specified";
+import AddArr from "./components/easy/AddArr";
+import RemoveObj from "./components/easy/RemoveObj";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Reverse />
+      <Array />
+      <EmptyArray />
+      <Duplicate />
+      <ReverseNum />
+      <Specified />
+      <AddArr />
+      <RemoveObj />
     </div>
   );
 }
