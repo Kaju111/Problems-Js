@@ -6,6 +6,8 @@ import ReverseNum from "./components/easy/ReverseNum";
 import Specified from "./components/easy/Specified";
 import AddArr from "./components/easy/AddArr";
 import RemoveObj from "./components/easy/RemoveObj";
+import Return from "./components/easy/Return";
+import Palindrome from "./components/easy/Palindrome";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Specified />
       <AddArr />
       <RemoveObj />
+      <Return />
+      <Palindrome />
     </div>
   );
 }
