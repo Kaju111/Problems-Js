@@ -10,6 +10,7 @@ const Palindrome = () => {
       console.log("Not Palindrome");
     }
   }
+
   console.log(num(292));
 
   return <div>yo</div>;

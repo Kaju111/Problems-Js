@@ -8,6 +8,7 @@ import AddArr from "./components/easy/AddArr";
 import RemoveObj from "./components/easy/RemoveObj";
 import Return from "./components/easy/Return";
 import Palindrome from "./components/easy/Palindrome";
+import TwoSum from "./components/easy/TwoSum";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <RemoveObj />
       <Return />
       <Palindrome />
+      <TwoSum />
     </div>
   );
 }
