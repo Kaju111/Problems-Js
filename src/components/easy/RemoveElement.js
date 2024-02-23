@@ -1,6 +1,25 @@
 import React from "react";
 
 const RemoveElement = () => {
+
+    function remove(nums, val) {
+        let count = []
+        for(let num of nums){
+            if(num != val){
+                count.push(num)
+            }
+        }
+
+        let  removeOne = count.length
+         
+        for (let i = 0; i < nums.length; i++) {
+             nums[i] = val[i]
+        }
+        return removeOne
+        
+    }
+
+
   return (
     <div>
       <h3>
