@@ -1,6 +1,32 @@
 import React from "react";
 
 const SearchInsertPosition = () => {
+  function ins(nums, target) {
+    let leftPosition = 0;
+    let rightPosiition = nums.length - 1;
+    let middle = Math.floor((leftPosition + rightPosiition) / 2);
+    let insertedPosition = 0;
+
+    while (leftPosition <= rightPosiition) {
+      if (target < nums[middle]) {
+        insertedPosition = middle;
+        rightPosiition = middle - 1;
+      } else if (target > nums[middle]) {
+        insertedPosition = middle + 1;
+
+        leftPosition = middle + 1;
+      } else if (target === nums[middle]) {
+        return middle;
+      }
+      middle = Math.floor((leftPosition + rightPosiition) / 2);
+    }
+    if (nums[middle] === target) {
+      return middle;
+    } else {
+      return insertedPosition;
+    }
+  }
+
   return (
     <div>
       <h3>
